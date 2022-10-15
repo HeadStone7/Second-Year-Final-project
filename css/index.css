@@ -1,0 +1,334 @@
+html{
+	overflow-x: hidden;
+}
+.grid{
+    margin-top: 20px;
+    height: 480px;
+    /* background-color: pink; */
+    /* float: left; */
+    display: flex;
+    justify-content: space-between;
+}
+.grid-col1{
+    width: 190px;
+    height: 93.8%;
+    background-color: #6e6568;
+    color: #fff;
+    font-size: 8px;
+    position: relative;
+	margin-right: 2px;
+}
+.grid-col1 ul li{
+	height: 8px;
+	width: 210px;
+}
+.grid-col1 ul li a{
+	height: 8px;
+	font-size: 12px;
+}
+.ad{
+    width: 250px;
+    height: 450px;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    left: -250px;
+}
+.ad-r{
+    position: absolute;
+    top: 0;
+    left: 250px;
+    z-index: 999;
+    width: 0;
+    height: 450px;
+    transition: all 0.8s;
+}
+.ad:hover .ad-r{
+    width: 990px;
+}
+.grid-col1 a{
+    color: #fff;
+    font-size: 16px;
+    margin: 0 3px;
+}
+.grid-col1 a:hover{
+    color: #f10215;
+}
+.grid-col1 ul{
+    padding: 10px 0;
+}
+.grid-col1 ul li{
+    padding-left: 12px;
+    height: 29px;
+    line-height: 29px;
+}
+.grid-col1 ul li:hover{
+    background-color: #9c9698;
+}
+.grid-col2{
+    width: 790px;
+    height: 90%;
+    position: relative;
+    /* background-color: purple; */
+}
+
+.swapImg {
+    position: absolute;
+    width: 1190px;
+  }
+  .btn {
+    position: absolute;
+    height: 90px;
+    width: 40px;
+    background-color: rgba(255, 255,255, .3);
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 90px;
+    font-size: 40px;
+    top: 155px;
+    cursor: pointer;
+  }
+  .btnRight,.btnLeft{
+    -moz-user-select: none; /*mozilar*/
+	-webkit-user-select: none; /*webkit*/
+	-ms-user-select: none; /*IE*/
+	 user-select: none;
+  }
+  .btnRight {
+    left: 664px;
+    top: 180px;
+  }
+  .btnLeft{
+	top: 180px;
+	right: 664px;
+  }
+  .btnRight:hover,.btnLeft:hover{
+    background-color: rgba(255, 255,255, .6);
+  }
+  #tabs {
+	position: absolute;
+    top: 407px;
+    left: 311px !important;
+    margin: 0 auto;
+  }
+  .tab {
+    height: 10px;
+    width: 10px;
+    background: white;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    float: left;
+    color: black;
+    margin-right: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+.bg {
+    background: #f10215;
+    color: white;
+}
+.user-info{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/sprite_userinfo@1x.png) no-repeat -70px 0;
+}
+.user-info img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.grid-col3{
+    width: 190px;
+    height: 100%;
+    margin-left: 10px;
+}
+/* .grid-col3{
+    width: 190px;
+    height: 100%;
+    margin-left: 10px;
+    
+} */
+/* .circle{
+    width: 165px;
+    height: 20px;
+    background-color: rgba(255, 255,255, .3);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.circle li{
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    float: left;
+    border-radius: 50%;
+    /* line-height: 20px; */
+    /* margin: 4px;
+    cursor: pointer;
+}
+.circle .current{
+    background-color: #f10215;
+} */ */
+.login{
+    height: 85px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+}
+.login-t{
+    width: 95px;
+    height: 60px;
+    line-height: 20px;
+    font-size: 12px;
+    white-space: nowrap;/* 强制一行内显示 */
+    overflow: hidden;/* 溢出隐藏*/
+    text-overflow: ellipsis;/* 超出部分显示省略号*/
+    color: #666;
+    padding-left: 60px;/* 用padding将文字挤过来*/
+    position: relative;/* 子绝父相 */
+}
+.login-t a{
+    color: #666;
+}
+.login-t a:hover{
+    color: #f10512;
+}
+.login-b a{
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    border: 2px solid #f10215;
+    margin-right: 3px;
+    text-align: center;
+    color: #f10215;
+}
+.login-b a:hover{
+    background-color: #f10215;
+    color: #fff;
+}
+.news{
+    height: 154px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 7px 13px 0;
+    box-sizing: border-box;
+}
+.news-t{
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.news-t a{
+    float: left;
+    height: 17px;
+    line-height: 17px;
+}
+.promotion{
+    width: 38px;
+    border-right: 1px solid #ccc;
+}
+.post{
+    margin-left: 15px;
+}
+.news-t .more{
+    float: right;
+}
+.news-t div{
+    height: 2px;
+    width: 28px;
+    background-color: #f10215;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+.news-b{
+    padding-top: 15px;
+}
+.news-b li{
+    height: 23px;
+    line-height: 23px;
+    cursor: pointer;
+}
+.expand{
+    height: 209px;
+    background-color: #fff;
+    overflow: hidden;
+    /* background: url(../images/sprite_fs@1x.png ) no-repeat center 30px; */
+
+}
+.expand ul{
+    width: 195px;
+}
+.expand li{
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.expand li a{
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+}
+.expand li i{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: url(../images/sprite_fs@1x.png) no-repeat;
+}
+.expand li :first-child i{
+    width: 20px;
+    height: 23px;
+    background-position: -2.5px -88px ;
+    /* background-position: -47px -88px ; */
+}
+.expand ul li:nth-child(n+2) i{
+
+    background-position: -2.5px -43px ;
+}
+.expand ul li:nth-child(n+3) i{
+   background-position: -47px -88px ;
+}
+.expand ul li:nth-child(n+4) i{
+    background-position: -90px 0 ;
+ }
+ .expand ul li:nth-child(n+5) i{
+    background-position: -90px -43px ;
+ }
+ .expand ul li:nth-child(n+6) i{
+    background-position: -2.5px 0 ;
+ }
+ .expand ul li:nth-child(n+7) i{
+    background-position: -46px -43px ;
+ }
+ .expand ul li:nth-child(n+8) i{
+    background-position: -90px -88px ;
+ }
+ .expand ul li:nth-child(n+9) i{
+    background-position: -134px 0 ;
+ }
+ .expand ul li:nth-child(n+10) i{
+    background-position: -134px -43px ;
+ }
+ .expand ul li:nth-child(n+11) i{
+    background-position: -134px -88px ;
+ }
+ .expand ul li:nth-child(n+12) i{
+    background-position: -46px 0 ;
+ }
+.img-wrapper .left .images img{
+	width: 80%;
+}
+.in-wrapper .big .small img {
+	width: 100%;
+}

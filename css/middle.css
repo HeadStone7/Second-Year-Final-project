@@ -1,0 +1,38 @@
+/* 中间部分头部的css */
+blockquote, body, button, dd, dl,
+ dt, fieldset, form, h1, h2, h3, h4,
+  h5, h6, hr, input, legend, li, ol,
+   p, pre, td, textarea, th, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+   
+}
+a{
+    text-decoration: none;
+    color: #999;
+    font-size: 12px;
+}
+/* 中间分类模块开始 */
+/* .content li{
+    position: absolute;
+    float: left;
+    opacity: 0;
+}
+.content li:first-child{
+    opacity: 1;
+} */
+/* 大图轮播 */
+/* * {
+    padding: 0px;
+    margin: 0px;
+  } */
+  
+
+/* .expand ul li:nth-child(3n+3) i{
+
+    background-position: -5px -88px ;
+}  几的倍数个就写几 */
